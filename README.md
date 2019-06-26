@@ -31,4 +31,5 @@ Please [Create an Issue](https://github.com/xnt/react-something-nice/issues)
 
 ## Contibuting
 
-Feel free to send a Pull Request (TODO: Contribution Guidelines)
+Feel free to send a Pull Request. Also check out our 
+[Guidelines](https://github.com/xnt/react-something-nice/blob/master/CONTRIBUTING.md) (WIP)
