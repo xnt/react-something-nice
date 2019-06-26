@@ -1,8 +1,12 @@
 "use strict";
 
 const messages = [
-  "Thank you for your hard work ✨",
   "Have a great day ☕️!",
+  "Lets' continue bringing out the best in one another 👌",
+  "Thank you for your dedication, your time and your talent 👍",
+  "Thank you for your hard work ✨",
+  "Thank you 👏!",
+  "We're glad that you're part of our team 🤗",
   "Your engineering team wishes you a fantastic day ♥"
 ];
 
