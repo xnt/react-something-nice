@@ -10,6 +10,10 @@ export default class SomethingNice extends PureComponent {
   }
 
   render() {
-    return <span style={this.props.style}>{this.message}</span>;
+    return (
+      <span style={this.props.style} className={this.props.className}>
+        {this.message}
+      </span>
+    );
   }
 }
