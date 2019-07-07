@@ -10,7 +10,7 @@ export default class SomethingNice extends PureComponent {
   }
 
   render() {
-    return (
+    return <span style={this.props.style}>{this.message}</span>;
       <span>
         { this.message }
       </span>
