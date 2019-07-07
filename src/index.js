@@ -1,7 +1,7 @@
 "use strict";
 
-import getMessage from './messages';
-import React, { PureComponent } from 'react';
+import getMessage from "./messages";
+import React, { PureComponent } from "react";
 
 export default class SomethingNice extends PureComponent {
   constructor(props) {
@@ -11,9 +11,5 @@ export default class SomethingNice extends PureComponent {
 
   render() {
     return <span style={this.props.style}>{this.message}</span>;
-      <span>
-        { this.message }
-      </span>
-    )
   }
 }
