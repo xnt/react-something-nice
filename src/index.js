@@ -3,13 +3,13 @@
 import getMessage from './messages';
 import AllowedLanguages from './allowedLanguages';
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
-export default class SomethingNice extends PureComponent {
+ class SomethingNice extends PureComponent {
+
+
   constructor(props) {
     super(props);
-    if(!props.lang) props.lang == 'en';
-    let result = AllowedLanguages.filter(language => language === props.lang);
-    if(!result) props.lang == 'en';
     this.message = getMessage(props.lang);
   }
 
@@ -21,3 +21,13 @@ export default class SomethingNice extends PureComponent {
     )
   }
 }
+
+SomethingNice.defaultProps = {
+  lang: 'en'
+}
+
+SomethingNice.propTypes = {
+  lang: PropTypes.oneOf(AllowedLanguages)
+}
+
+export default SomethingNice;

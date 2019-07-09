@@ -11,7 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/xnt/react-something-nice.git"
   },
-  "keywords": [ "messages", "team", "multipurpose", "something nice", "react"],
+  "keywords": [
+    "messages",
+    "team",
+    "multipurpose",
+    "something nice",
+    "react"
+  ],
   "author": "Vicente Plata",
   "license": "MIT",
   "devDependencies": {
@@ -19,5 +25,8 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
   }
 }
