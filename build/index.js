@@ -42,7 +42,32 @@ function (_PureComponent) {
     _classCallCheck(this, SomethingNice);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SomethingNice).call(this, props));
-    _this.message = (0, _messages["default"])();
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> added new language ES and EN as default.
+    if (!props.lang) props.lang == 'en';
+
+    var result = _allowedLanguages["default"].filter(function (language) {
+      return language === props.lang;
+    });
+
+    if (!result) props.lang == 'en';
+<<<<<<< HEAD
+>>>>>>> added new language ES and EN as default.
+=======
+>>>>>>> simplified language check and deleted console.logs
+=======
+>>>>>>> added new language ES and EN as default.
+=======
+>>>>>>> simplified language check and deleted console.logs
+=======
+>>>>>>> ddfec73f930dc31b311ad752dd23f862e9b41754
+    _this.message = (0, _messages["default"])(props.lang);
     return _this;
   }
 
