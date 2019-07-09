@@ -15,10 +15,10 @@ import PropTypes from 'prop-types';
 
   render() {
     return (
-      <span>
-        { this.message }
+      <span style={this.props.style} className={this.props.className}>
+        {this.message}
       </span>
-    )
+    );
   }
 }
 
