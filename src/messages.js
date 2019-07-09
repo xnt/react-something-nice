@@ -10,8 +10,25 @@ const messages = [
   "Your engineering team wishes you a fantastic day ♥"
 ];
 
-const getMessage = () => {
-  return messages[Math.floor(Math.random() * messages.length)];
+const mensajes = [
+  "Que tengas un buen día = !",
+  "Gracias por trabajar tanto!",
+  "Muchas gracias :)"
+];
+
+const languages = (lang) => {
+  let l = {
+    en: messages,
+    es: mensajes
+  }
+  return l[lang];
+}
+
+const getMessage = (lang) => {
+  console.log(`Lang en getMessage ${lang}`)
+  if(!lang) lang = 'en';
+  let idiom = languages(lang);
+  return idiom[Math.floor(Math.random() * idiom.length)];
 }
 
 export default getMessage;
