@@ -44,16 +44,6 @@ function (_PureComponent) {
     _classCallCheck(this, SomethingNice);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SomethingNice).call(this, props));
-<<<<<<< HEAD
-=======
-    if (!props.lang) props.lang == 'en';
-
-    var result = _allowedLanguages["default"].filter(function (language) {
-      return language === props.lang;
-    });
-
-    if (!result) props.lang == 'en';
->>>>>>> added new language ES and EN as default.
     _this.message = (0, _messages["default"])(props.lang);
     return _this;
   }

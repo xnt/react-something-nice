@@ -8,12 +8,6 @@ export default class SomethingNice extends PureComponent {
 
   constructor(props) {
     super(props);
-<<<<<<< HEAD
-=======
-    if(!props.lang) props.lang == 'en';
-    let result = AllowedLanguages.filter(language => language === props.lang);
-    if(!result) props.lang == 'en';
->>>>>>> added new language ES and EN as default.
     this.message = getMessage(props.lang);
   }
 
