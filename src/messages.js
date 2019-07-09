@@ -16,6 +16,7 @@ const mensajes = [
   "Gracias por trabajar tanto!",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> added new messages in spanish
   "Muchas gracias :)",
@@ -30,6 +31,9 @@ const mensajes = [
 >>>>>>> added new language ES and EN as default.
 =======
 >>>>>>> added new messages in spanish
+=======
+  "Muchas gracias :)"
+>>>>>>> added new language ES and EN as default.
 ];
 
 const languages = (lang) => {
@@ -41,6 +45,7 @@ const languages = (lang) => {
 }
 
 const getMessage = (lang) => {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   if(!lang) lang = 'en';
@@ -55,6 +60,10 @@ const getMessage = (lang) => {
   let currentLangCheck = AllowedLanguages.some(language => language.includes(lang));
   if(!currentLangCheck) lang = 'en';
 >>>>>>> simplified language check and deleted console.logs
+=======
+  console.log(`Lang en getMessage ${lang}`)
+  if(!lang) lang = 'en';
+>>>>>>> added new language ES and EN as default.
   let idiom = languages(lang);
   return idiom[Math.floor(Math.random() * idiom.length)];
 }
