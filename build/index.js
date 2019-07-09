@@ -7,6 +7,8 @@ exports["default"] = void 0;
 
 var _messages = _interopRequireDefault(require("./messages"));
 
+var _allowedLanguages = _interopRequireDefault(require("./allowedLanguages"));
+
 var _react = _interopRequireWildcard(require("react"));
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; return newObj; } }
@@ -42,6 +44,16 @@ function (_PureComponent) {
     _classCallCheck(this, SomethingNice);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SomethingNice).call(this, props));
+<<<<<<< HEAD
+=======
+    if (!props.lang) props.lang == 'en';
+
+    var result = _allowedLanguages["default"].filter(function (language) {
+      return language === props.lang;
+    });
+
+    if (!result) props.lang == 'en';
+>>>>>>> added new language ES and EN as default.
     _this.message = (0, _messages["default"])(props.lang);
     return _this;
   }
