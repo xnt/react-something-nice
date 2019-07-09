@@ -15,15 +15,21 @@ const mensajes = [
   "Que tengas un buen día = !",
   "Gracias por trabajar tanto!",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> added new messages in spanish
   "Muchas gracias :)",
   "Que bien lo estás haciendo 👌",
   "Gracias por tu dedicación, tu tiempo y tu talento 👍",
   "Gracias 👏!",
   "Estamos contentos de que seas parte de nuestro grupo 🤗",
   "Tu grupo de ingrenieria te desea un fantastico día ♥"
+<<<<<<< HEAD
 =======
   "Muchas gracias :)"
 >>>>>>> added new language ES and EN as default.
+=======
+>>>>>>> added new messages in spanish
 ];
 
 const languages = (lang) => {
