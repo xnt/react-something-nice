@@ -17,6 +17,9 @@ const mensajes = [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> added new messages in spanish
 =======
 >>>>>>> added new messages in spanish
   "Muchas gracias :)",
@@ -26,6 +29,7 @@ const mensajes = [
   "Estamos contentos de que seas parte de nuestro grupo 🤗",
   "Tu grupo de ingrenieria te desea un fantastico día ♥"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   "Muchas gracias :)"
 >>>>>>> added new language ES and EN as default.
@@ -34,6 +38,8 @@ const mensajes = [
 =======
   "Muchas gracias :)"
 >>>>>>> added new language ES and EN as default.
+=======
+>>>>>>> added new messages in spanish
 ];
 
 const languages = (lang) => {
