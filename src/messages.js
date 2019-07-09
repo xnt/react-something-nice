@@ -14,12 +14,16 @@ const messages = [
 const mensajes = [
   "Que tengas un buen día = !",
   "Gracias por trabajar tanto!",
+<<<<<<< HEAD
   "Muchas gracias :)",
   "Que bien lo estás haciendo 👌",
   "Gracias por tu dedicación, tu tiempo y tu talento 👍",
   "Gracias 👏!",
   "Estamos contentos de que seas parte de nuestro grupo 🤗",
   "Tu grupo de ingrenieria te desea un fantastico día ♥"
+=======
+  "Muchas gracias :)"
+>>>>>>> added new language ES and EN as default.
 ];
 
 const languages = (lang) => {
@@ -31,9 +35,14 @@ const languages = (lang) => {
 }
 
 const getMessage = (lang) => {
+<<<<<<< HEAD
   if(!lang) lang = 'en';
   let currentLangCheck = AllowedLanguages.some(language => language.includes(lang));
   if(!currentLangCheck) lang = 'en';
+=======
+  console.log(`Lang en getMessage ${lang}`)
+  if(!lang) lang = 'en';
+>>>>>>> added new language ES and EN as default.
   let idiom = languages(lang);
   return idiom[Math.floor(Math.random() * idiom.length)];
 }
