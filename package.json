@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/xnt/react-something-nice.git"
   },
+  "keywords": [ "messages", "team", "multipurpose", "something nice", "react"],
   "author": "Vicente Plata",
   "license": "MIT",
   "devDependencies": {
