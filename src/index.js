@@ -1,12 +1,16 @@
 "use strict";
 
-import getMessage from "./messages";
-import React, { PureComponent } from "react";
+import getMessage from './messages';
+import AllowedLanguages from './allowedLanguages';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
-export default class SomethingNice extends PureComponent {
+ class SomethingNice extends PureComponent {
+
+
   constructor(props) {
     super(props);
-    this.message = getMessage();
+    this.message = getMessage(props.lang);
   }
 
   render() {
@@ -17,3 +21,13 @@ export default class SomethingNice extends PureComponent {
     );
   }
 }
+
+SomethingNice.defaultProps = {
+  lang: 'en'
+}
+
+SomethingNice.propTypes = {
+  lang: PropTypes.oneOf(AllowedLanguages)
+}
+
+export default SomethingNice;
