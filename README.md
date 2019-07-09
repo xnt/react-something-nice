@@ -25,6 +25,18 @@ feel good and happy.
 `<SomethingNice />` . For a list of the current messages, see 
 [here](https://github.com/xnt/react-something-nice/blob/e3b2d7ab17095dd5b0026f61538981a214594f54/src/messages.js#L3)
 
+### Languages
+
+`<SomethingNice lang='es' />`
+
+Starting with version 0.3.0, we now support multiple languages. Use a `lang` prop to set it (`'en'` is the
+default):
+
+| Code | Language | From Version |
+| ---- | -------- | ------------ |
+| `en` | English  | NA (default) |
+| `es` | Spanish  | `0.3.0`      |
+
 ## Ideas? Suggestions?
 
 Please [Create an Issue](https://github.com/xnt/react-something-nice/issues)

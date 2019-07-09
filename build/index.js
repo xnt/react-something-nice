@@ -7,7 +7,11 @@ exports["default"] = void 0;
 
 var _messages = _interopRequireDefault(require("./messages"));
 
+var _allowedLanguages = _interopRequireDefault(require("./allowedLanguages"));
+
 var _react = _interopRequireWildcard(require("react"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; return newObj; } }
 
@@ -42,7 +46,7 @@ function (_PureComponent) {
     _classCallCheck(this, SomethingNice);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SomethingNice).call(this, props));
-    _this.message = (0, _messages["default"])();
+    _this.message = (0, _messages["default"])(props.lang);
     return _this;
   }
 
@@ -56,4 +60,11 @@ function (_PureComponent) {
   return SomethingNice;
 }(_react.PureComponent);
 
-exports["default"] = SomethingNice;
+SomethingNice.defaultProps = {
+  lang: 'en'
+};
+SomethingNice.propTypes = {
+  lang: _propTypes["default"].oneOf(_allowedLanguages["default"])
+};
+var _default = SomethingNice;
+exports["default"] = _default;
