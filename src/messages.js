@@ -54,6 +54,7 @@ const getMessage = (lang) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   if(!lang) lang = 'en';
   let currentLangCheck = AllowedLanguages.some(language => language.includes(lang));
   if(!currentLangCheck) lang = 'en';
@@ -70,6 +71,11 @@ const getMessage = (lang) => {
   console.log(`Lang en getMessage ${lang}`)
   if(!lang) lang = 'en';
 >>>>>>> added new language ES and EN as default.
+=======
+  if(!lang) lang = 'en';
+  let currentLangCheck = AllowedLanguages.some(language => language.includes(lang));
+  if(!currentLangCheck) lang = 'en';
+>>>>>>> simplified language check and deleted console.logs
   let idiom = languages(lang);
   return idiom[Math.floor(Math.random() * idiom.length)];
 }

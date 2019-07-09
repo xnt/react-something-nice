@@ -73,9 +73,17 @@ var languages = function languages(lang) {
 };
 
 var getMessage = function getMessage(lang) {
-  console.log("Lang en getMessage ".concat(lang));
   if (!lang) lang = 'en';
+<<<<<<< HEAD
 >>>>>>> added new language ES and EN as default.
+=======
+
+  var currentLangCheck = _allowedLanguages["default"].some(function (language) {
+    return language.includes(lang);
+  });
+
+  if (!currentLangCheck) lang = 'en';
+>>>>>>> simplified language check and deleted console.logs
   var idiom = languages(lang);
   return idiom[Math.floor(Math.random() * idiom.length)];
 };
