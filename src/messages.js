@@ -1,4 +1,5 @@
 "use strict";
+import AllowedLanguages from './allowedLanguages';
 
 const messages = [
   "Have a great day ☕️!",
@@ -30,8 +31,9 @@ const languages = (lang) => {
 }
 
 const getMessage = (lang) => {
-  console.log(`Lang en getMessage ${lang}`)
   if(!lang) lang = 'en';
+  let currentLangCheck = AllowedLanguages.some(language => language.includes(lang));
+  if(!currentLangCheck) lang = 'en';
   let idiom = languages(lang);
   return idiom[Math.floor(Math.random() * idiom.length)];
 }
