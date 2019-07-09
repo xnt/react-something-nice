@@ -18,10 +18,13 @@ const mensajes = [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> added new messages in spanish
 =======
 >>>>>>> added new messages in spanish
+=======
+>>>>>>> ddfec73f930dc31b311ad752dd23f862e9b41754
   "Muchas gracias :)",
   "Que bien lo estás haciendo 👌",
   "Gracias por tu dedicación, tu tiempo y tu talento 👍",
@@ -30,6 +33,7 @@ const mensajes = [
   "Tu grupo de ingrenieria te desea un fantastico día ♥"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   "Muchas gracias :)"
 >>>>>>> added new language ES and EN as default.
@@ -40,6 +44,8 @@ const mensajes = [
 >>>>>>> added new language ES and EN as default.
 =======
 >>>>>>> added new messages in spanish
+=======
+>>>>>>> ddfec73f930dc31b311ad752dd23f862e9b41754
 ];
 
 const languages = (lang) => {
@@ -55,6 +61,7 @@ const getMessage = (lang) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   if(!lang) lang = 'en';
   let currentLangCheck = AllowedLanguages.some(language => language.includes(lang));
   if(!currentLangCheck) lang = 'en';
@@ -76,6 +83,11 @@ const getMessage = (lang) => {
   let currentLangCheck = AllowedLanguages.some(language => language.includes(lang));
   if(!currentLangCheck) lang = 'en';
 >>>>>>> simplified language check and deleted console.logs
+=======
+  if(!lang) lang = 'en';
+  let currentLangCheck = AllowedLanguages.some(language => language.includes(lang));
+  if(!currentLangCheck) lang = 'en';
+>>>>>>> ddfec73f930dc31b311ad752dd23f862e9b41754
   let idiom = languages(lang);
   return idiom[Math.floor(Math.random() * idiom.length)];
 }

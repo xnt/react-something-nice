@@ -14,6 +14,9 @@ var messages = ["Have a great day ☕️!", "Lets' continue bringing out the bes
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ddfec73f930dc31b311ad752dd23f862e9b41754
 var mensajes = ["Que tengas un buen día = !", "Gracias por trabajar tanto!", "Muchas gracias :)", "Que bien lo estás haciendo 👌", "Gracias por tu dedicación, tu tiempo y tu talento 👍", "Gracias 👏!", "Estamos contentos de que seas parte de nuestro grupo 🤗", "Tu grupo de ingrenieria te desea un fantastico día ♥"];
 
 var languages = function languages(lang) {
@@ -30,6 +33,7 @@ var getMessage = function getMessage(lang) {
   var currentLangCheck = _allowedLanguages["default"].some(function (language) {
     return language.includes(lang);
   });
+<<<<<<< HEAD
 
   if (!currentLangCheck) lang = 'en';
 =======
@@ -84,6 +88,10 @@ var getMessage = function getMessage(lang) {
 
   if (!currentLangCheck) lang = 'en';
 >>>>>>> simplified language check and deleted console.logs
+=======
+
+  if (!currentLangCheck) lang = 'en';
+>>>>>>> ddfec73f930dc31b311ad752dd23f862e9b41754
   var idiom = languages(lang);
   return idiom[Math.floor(Math.random() * idiom.length)];
 };

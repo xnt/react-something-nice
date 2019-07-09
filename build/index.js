@@ -46,6 +46,7 @@ function (_PureComponent) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> added new language ES and EN as default.
@@ -64,6 +65,8 @@ function (_PureComponent) {
 >>>>>>> added new language ES and EN as default.
 =======
 >>>>>>> simplified language check and deleted console.logs
+=======
+>>>>>>> ddfec73f930dc31b311ad752dd23f862e9b41754
     _this.message = (0, _messages["default"])(props.lang);
     return _this;
   }
