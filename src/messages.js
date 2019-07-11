@@ -7,7 +7,9 @@ const messages = [
   "Thank you for your hard work ✨",
   "Thank you 👏!",
   "We're glad that you're part of our team 🤗",
-  "Your engineering team wishes you a fantastic day ♥"
+  "Your engineering team wishes you a fantastic day ♥",
+  "You're a rockstar!",
+  "We're lucky to have you on this team!"
 ];
 
 const mensajes = [
