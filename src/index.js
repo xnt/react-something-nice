@@ -3,7 +3,6 @@
 import getMessage from './messages';
 import AllowedLanguages from './allowedLanguages';
 import React, { PureComponent } from 'react';
-import { ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
 
  class SomethingNice extends PureComponent {
@@ -28,9 +27,9 @@ SomethingNice.defaultProps = {
 }
 
 SomethingNice.propTypes = {
-  lang: PropTypes.oneOf(AllowedLanguages),
   className: PropTypes.string,
-  style: ViewPropTypes.style
+  lang: PropTypes.oneOf(AllowedLanguages),
+  style: PropTypes.object
 }
 
 export default SomethingNice;

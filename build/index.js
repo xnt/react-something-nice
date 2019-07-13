@@ -53,7 +53,10 @@ function (_PureComponent) {
   _createClass(SomethingNice, [{
     key: "render",
     value: function render() {
-      return _react["default"].createElement("span", null, this.message);
+      return _react["default"].createElement("span", {
+        style: this.props.style,
+        className: this.props.className
+      }, this.message);
     }
   }]);
 
@@ -64,7 +67,9 @@ SomethingNice.defaultProps = {
   lang: 'en'
 };
 SomethingNice.propTypes = {
-  lang: _propTypes["default"].oneOf(_allowedLanguages["default"])
+  className: _propTypes["default"].string,
+  lang: _propTypes["default"].oneOf(_allowedLanguages["default"]),
+  style: _propTypes["default"].object
 };
 var _default = SomethingNice;
 exports["default"] = _default;
