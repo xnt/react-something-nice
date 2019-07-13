@@ -3,6 +3,7 @@
 import getMessage from './messages';
 import AllowedLanguages from './allowedLanguages';
 import React, { PureComponent } from 'react';
+import { ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
 
  class SomethingNice extends PureComponent {
@@ -15,10 +16,10 @@ import PropTypes from 'prop-types';
 
   render() {
     return (
-      <span>
-        { this.message }
+      <span style={this.props.style} className={this.props.className}>
+        {this.message}
       </span>
-    )
+    );
   }
 }
 
@@ -27,7 +28,9 @@ SomethingNice.defaultProps = {
 }
 
 SomethingNice.propTypes = {
-  lang: PropTypes.oneOf(AllowedLanguages)
+  lang: PropTypes.oneOf(AllowedLanguages),
+  className: PropTypes.string,
+  style: ViewPropTypes.style
 }
 
 export default SomethingNice;
