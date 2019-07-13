@@ -2,12 +2,11 @@
 
 import getMessage from './messages';
 import AllowedLanguages from './allowedLanguages';
-import React, { PureComponent } from 'react';
+import { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
  class SomethingNice extends PureComponent {
-
-
+   
   constructor(props) {
     super(props);
     this.message = getMessage(props.lang);
