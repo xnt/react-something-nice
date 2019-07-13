@@ -2,10 +2,10 @@
 
 import getMessage from './messages';
 import AllowedLanguages from './allowedLanguages';
-import { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
- class SomethingNice extends PureComponent {
+ class SomethingNice extends React.PureComponent {
    
   constructor(props) {
     super(props);
@@ -22,7 +22,7 @@ import PropTypes from 'prop-types';
 }
 
 SomethingNice.defaultProps = {
-  lang: 'en'
+  lang: "en"
 }
 
 SomethingNice.propTypes = {

@@ -9,7 +9,7 @@ var _messages = _interopRequireDefault(require("./messages"));
 
 var _allowedLanguages = _interopRequireDefault(require("./allowedLanguages"));
 
-var _react = require("react");
+var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -35,8 +35,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var SomethingNice =
 /*#__PURE__*/
-function (_PureComponent) {
-  _inherits(SomethingNice, _PureComponent);
+function (_React$PureComponent) {
+  _inherits(SomethingNice, _React$PureComponent);
 
   function SomethingNice(props) {
     var _this;
@@ -51,7 +51,7 @@ function (_PureComponent) {
   _createClass(SomethingNice, [{
     key: "render",
     value: function render() {
-      return React.createElement("span", {
+      return _react["default"].createElement("span", {
         style: this.props.style,
         className: this.props.className
       }, this.message);
@@ -59,10 +59,10 @@ function (_PureComponent) {
   }]);
 
   return SomethingNice;
-}(_react.PureComponent);
+}(_react["default"].PureComponent);
 
 SomethingNice.defaultProps = {
-  lang: 'en'
+  lang: "en"
 };
 SomethingNice.propTypes = {
   className: _propTypes["default"].string,
