@@ -1,22 +1,41 @@
 {
   "name": "react-something-nice",
-  "version": "0.2.1",
+  "version": "0.4.0",
   "description": "",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx babel src --out-dir build"
+    "build": "npx babel src --out-dir build",
+    "lint": "eslint --fix ./src --ext .js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xnt/react-something-nice.git"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "keywords": [
+    "messages",
+    "team",
+    "multipurpose",
+    "something nice",
+    "react"
+  ],
   "author": "Vicente Plata",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0"
+    "@babel/preset-react": "^7.0.0",
+    "eslint": "^6.0.1",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^3.0.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
   }
 }

@@ -29,11 +29,35 @@ const messages = [
   "You did an excellent job.Thanks for being Awesome.",
   "A great employee is like a four leaf clover, hard to find & lucky to have.👊",
   "We can’t spell SUCCESS without U..!!🎉",
-  "Love having you on the team. Thanks for all that you do."
+  "Love having you on the team. Thanks for all that you do.",
+  "You're a rockstar!",
+  "We're lucky to have you on this team!"
 ];
 
-const getMessage = () => {
-  return messages[Math.floor(Math.random() * messages.length)];
+const mensajes = [
+  "¡Que tengas un buen día ☕️ !",
+  "¡Gracias por trabajar tanto!",
+  "Muchas gracias :)",
+  "Qué bien lo estás haciendo 👌",
+  "Gracias por tu dedicación, tu tiempo y tu talento 👍",
+  "¡Gracias 👏!",
+  "Estamos contentos de que seas parte de nuestro grupo 🤗",
+  "Tu grupo de ingrenieria te desea un fantastico día ♥"
+];
+
+const languages = (lang) => {
+  let l = {
+    en: messages,
+    es: mensajes
+  }
+  return l[lang];
+}
+
+const getMessage = (lang) => {
+  console.log(`Lang en getMessage ${lang}`)
+  if(!lang) lang = 'en';
+  let idiom = languages(lang);
+  return idiom[Math.floor(Math.random() * idiom.length)];
 }
 
 export default getMessage;
