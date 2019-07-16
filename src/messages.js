@@ -10,7 +10,7 @@ const messages = [
   "Your engineering team wishes you a fantastic day ♥",
   "You're a rockstar!",
   "We're lucky to have you on this team!",
-  "Good initiative! We can learn to colaborate with this code"
+  "Good initiative! We can learn to colaborate with this activity!"
 ];
 
 const mensajes = [
