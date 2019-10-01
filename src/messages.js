@@ -9,7 +9,11 @@ const messages = [
   "We're glad that you're part of our team 🤗",
   "Your engineering team wishes you a fantastic day ♥",
   "You're a rockstar!",
-  "We're lucky to have you on this team!"
+  "We're lucky to have you on this team!",
+  "Having you on this team makes a big difference",
+  "It's so refreshing getting to work with you.",
+  "The work that you do matters to our success.",
+  "I am continually impressed by your results!"
 ];
 
 const mensajes = [
