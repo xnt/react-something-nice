@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-var messages = ["Have a great day ☕️!", "Lets' continue bringing out the best in one another 👌", "Thank you for your dedication, your time and your talent 👍", "Thank you for your hard work ✨", "Thank you 👏!", "We're glad that you're part of our team 🤗", "Your engineering team wishes you a fantastic day ♥", "You're a rockstar!", "We're lucky to have you on this team!"];
+var messages = ["Have a great day ☕️!", "Lets' continue bringing out the best in one another 👌", "Thank you for your dedication, your time and your talent 👍", "Thank you for your hard work ✨", "Thank you 👏!", "We're glad that you're part of our team 🤗", "Your engineering team wishes you a fantastic day ♥", "You're a rockstar!", "We're lucky to have you on this team!","Kudos to your achievement!","Nice to have you as a part of our team","Best wishes on future endeavours","You're indeed an integral part of the team"];
 var mensajes = ["¡Que tengas un buen día ☕️ !", "¡Gracias por trabajar tanto!", "Muchas gracias :)", "Qué bien lo estás haciendo 👌", "Gracias por tu dedicación, tu tiempo y tu talento 👍", "¡Gracias 👏!", "Estamos contentos de que seas parte de nuestro grupo 🤗", "Tu grupo de ingrenieria te desea un fantastico día ♥"];
 
 var languages = function languages(lang) {
