@@ -1,6 +1,16 @@
 "use strict";
 
 const messages = [
+  // New Messages - Start
+  "Believe in yourself!", 
+  "Have faith in your abilities!",
+  "Thanks for your support!",
+  "You're doing great!",
+  "Teamwork makes the dream work!",
+  "You're a vauluable member of the team!",
+  "You're making a positive impact with your talent!",
+  "Keep moving forward!"
+  // New Messages - End
   "Have a great day ☕️!",
   "Lets' continue bringing out the best in one another 👌",
   "Thank you for your dedication, your time and your talent 👍",
