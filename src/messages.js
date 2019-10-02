@@ -23,10 +23,21 @@ const mensajes = [
   "Tu grupo de ingrenieria te desea un fantastico día ♥"
 ];
 
+const messages_fr = [
+  "Bonne journée!"
+  "Continuons à faire ressortir le meilleur l'un de l'autre!"
+  "Merci pour votre travail acharné!"
+  "On est heureux que vous fassiez partie de notre équipe"
+  "Merci pour votre dévouement, votre temps et votre talent!"
+  "Votre équipe apprécie tout ce que vous apportez à la table."
+  "Votre travail est apprécié ici!"
+];
+
 const languages = (lang) => {
   let l = {
     en: messages,
-    es: mensajes
+    es: mensajes,
+    fr: messages_fr
   }
   return l[lang];
 }
