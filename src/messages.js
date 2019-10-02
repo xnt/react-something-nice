@@ -23,10 +23,22 @@ const mensajes = [
   "Tu grupo de ingrenieria te desea un fantastico día ♥"
 ];
 
+const meldungen = [
+  "Ich wünsche dir einen wundervollen Tag!☕️",
+  "Dankeschön für deine Zeit, dein Talent und deine Hingabe 👍",
+  "Vielen Dank 👏!",
+  "Vielen Dank für deine harte Arbeit ",
+  "Vielen Dank für deine Hilfe und deine Zeit",
+  "Du bist der Beste !",
+  "Dein Team wünscht dir alles liebe",
+  "Wir können uns glücklich schätzen dich im Team zu haben"
+]
+
 const languages = (lang) => {
   let l = {
     en: messages,
-    es: mensajes
+    es: mensajes,
+    de: meldungen
   }
   return l[lang];
 }
