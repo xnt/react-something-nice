@@ -9,7 +9,9 @@ const messages = [
   "We're glad that you're part of our team 🤗",
   "Your engineering team wishes you a fantastic day ♥",
   "You're a rockstar!",
-  "We're lucky to have you on this team!"
+  "We're lucky to have you on this team!",
+  "You have the best attitude!",
+  "Thank you for always being so reliable"
 ];
 
 const mensajes = [
@@ -20,7 +22,9 @@ const mensajes = [
   "Gracias por tu dedicación, tu tiempo y tu talento 👍",
   "¡Gracias 👏!",
   "Estamos contentos de que seas parte de nuestro grupo 🤗",
-  "Tu grupo de ingrenieria te desea un fantastico día ♥"
+  "Tu grupo de ingrenieria te desea un fantastico día ♥",
+  "¡Tienes la mejor actitud!",
+  "Gracias por ser siempre tan confiable."
 ];
 
 const languages = (lang) => {
