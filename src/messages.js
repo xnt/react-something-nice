@@ -10,6 +10,8 @@ const messages = [
   "Your engineering team wishes you a fantastic day ♥",
   "You're a rockstar!",
   "We're lucky to have you on this team!",
+  "You have the best attitude!",
+  "Thank you for always being so reliable",
   "You can totally do this💪",
   "You are doing great!",
   "You are beautiful",
@@ -43,6 +45,8 @@ const mensajes = [
   "¡Gracias 👏!",
   "Estamos contentos de que seas parte de nuestro grupo 🤗",
   "Tu grupo de ingrenieria te desea un fantastico día ♥",
+  "¡Tienes la mejor actitud!",
+  "Gracias por ser siempre tan confiable.",
   "Buena iniciativa! De esta manera aprendemos a colaborar!",
   "Gracias por este trabajo!",
   "Querido compañero, Eres increíble! Sigue así!"
