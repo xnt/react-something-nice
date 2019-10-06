@@ -22,8 +22,7 @@ feel good and happy.
 
 ## Using It
 
-`<SomethingNice />` . For a list of the current messages, see 
-[here](https://github.com/xnt/react-something-nice/blob/e3b2d7ab17095dd5b0026f61538981a214594f54/src/messages.js#L3)
+`<SomethingNice />` . For a list of the current messages, see [here](src/messages.js)
 
 ### Languages
 
@@ -53,4 +52,4 @@ Please [Create an Issue](https://github.com/xnt/react-something-nice/issues)
 ## Contibuting
 
 Feel free to send a Pull Request. Also check out our 
-[Guidelines](https://github.com/xnt/react-something-nice/blob/master/CONTRIBUTING.md) (WIP)
+[Guidelines](CONTRIBUTING.md) (WIP)
