@@ -2,7 +2,7 @@
 
 const messages = [
   "Have a great day ☕️!",
-  "Lets' continue bringing out the best in one another 👌",
+  "Let's continue bringing out the best in one another 👌",
   "Thank you for your dedication, your time and your talent 👍",
   "Thank you for your hard work ✨",
   "Thank you 👏!",
@@ -10,6 +10,14 @@ const messages = [
   "Your engineering team wishes you a fantastic day ♥",
   "You're a rockstar!",
   "We're lucky to have you on this team!",
+  "You're awesome!",
+  "You're kicking goals!",
+  "You came, you saw, you conquered!",
+  "You're the bees knees",
+  "We appreciate all your hard work",
+  "Your hard work doesn't go unnoticed! 👏",
+  "Thank you for putting in the effort to make something great 👌",
+  "We're doing great work together 🤗",
   "Good initiative! We can learn to colaborate with this activity!",
   "Dear Team Member, You are Amazing! Keep up your great Job!"
 ];
