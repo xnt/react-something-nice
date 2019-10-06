@@ -9,7 +9,7 @@ const messages = [
   "Teamwork makes the dream work!",
   "You're a vauluable member of the team!",
   "You're making a positive impact with your talent!",
-  "Keep moving forward!"
+  "Keep moving forward!",
   // New Messages - End
   "Have a great day ☕️!",
   "Lets' continue bringing out the best in one another 👌",
