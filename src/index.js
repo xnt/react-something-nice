@@ -2,23 +2,19 @@
 
 import getMessage from './messages';
 import AllowedLanguages from './allowedLanguages';
-import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
- class SomethingNice extends React.PureComponent {
-   
-  constructor(props) {
-    super(props);
-    this.message = getMessage(props.lang);
-  }
+const SomethingNice = ({ className, lang, style }) => {
 
-  render() {
-    return (
-      <span style={this.props.style} className={this.props.className}>
-        {this.message}
-      </span>
-    );
-  }
+  const [message] = useState(getMessage(lang));
+
+  return (
+    <span style={style} className={className}>
+        {message}
+    </span>
+  );
 }
 
 SomethingNice.defaultProps = {
