@@ -10,7 +10,8 @@ const messages = [
   "Your engineering team wishes you a fantastic day ♥",
   "You're a rockstar!",
   "We're lucky to have you on this team!",
-  "Good initiative! We can learn to colaborate with this activity!"
+  "Good initiative! We can learn to colaborate with this activity!",
+  "Dear Team Member, You are Amazing! Keep up your great Job!"
 ];
 
 const mensajes = [
@@ -23,7 +24,8 @@ const mensajes = [
   "Estamos contentos de que seas parte de nuestro grupo 🤗",
   "Tu grupo de ingrenieria te desea un fantastico día ♥",
   "Buena iniciativa! De esta manera aprendemos a colaborar!",
-  "Gracias por este trabajo!"
+  "Gracias por este trabajo!",
+  "Querido compañero, Eres increíble! Sigue así!"
 ];
 
 const languages = (lang) => {

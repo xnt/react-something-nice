@@ -2,12 +2,11 @@
 
 import getMessage from './messages';
 import AllowedLanguages from './allowedLanguages';
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
- class SomethingNice extends PureComponent {
-
-
+ class SomethingNice extends React.PureComponent {
+   
   constructor(props) {
     super(props);
     this.message = getMessage(props.lang);
@@ -15,19 +14,21 @@ import PropTypes from 'prop-types';
 
   render() {
     return (
-      <span>
-        { this.message }
+      <span style={this.props.style} className={this.props.className}>
+        {this.message}
       </span>
-    )
+    );
   }
 }
 
 SomethingNice.defaultProps = {
-  lang: 'en'
+  lang: "en"
 }
 
 SomethingNice.propTypes = {
-  lang: PropTypes.oneOf(AllowedLanguages)
+  className: PropTypes.string,
+  lang: PropTypes.oneOf(AllowedLanguages),
+  style: PropTypes.object
 }
 
 export default SomethingNice;
