@@ -36,6 +36,7 @@ default):
 | ---- | -------- | ------------ |
 | `en` | English  | NA (default) |
 | `es` | Spanish  | `0.3.0`      |
+| `de` | German   | `0.3.0`      | 
 
 ### Styling
 
