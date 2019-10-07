@@ -60,10 +60,16 @@ const languages = (lang) => {
   return l[lang];
 }
 
-const getMessage = (lang) => {
+const getMessage = (allowDefault, customMessages, lang) => {
   console.log(`Lang en getMessage ${lang}`)
-  if(!lang) lang = 'en';
-  let idiom = languages(lang);
+
+  let idiom = customMessages;
+
+  if (allowDefault) {
+    if(!lang) lang = 'en';
+    idiom = [languages(lang), ...idiom];
+  }
+
   return idiom[Math.floor(Math.random() * idiom.length)];
 }
 

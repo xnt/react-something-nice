@@ -6,9 +6,15 @@ import AllowedLanguages from './allowedLanguages';
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const SomethingNice = ({ className, lang, style }) => {
+const SomethingNice = ({
+  allowDefault,
+  className,
+  customMessages,
+  lang,
+  style
+}) => {
 
-  const [message] = useState(getMessage(lang));
+  const [message] = useState(getMessage(allowDefault, customMessages, lang));
 
   return (
     <span style={style} className={className}>
@@ -18,11 +24,15 @@ const SomethingNice = ({ className, lang, style }) => {
 }
 
 SomethingNice.defaultProps = {
+  allowDefault: true,
+  customMessages: [],
   lang: "en"
 }
 
 SomethingNice.propTypes = {
+  allowDefault: PropTypes.bool,
   className: PropTypes.string,
+  customMessages: PropTypes.arrayOf(PropTypes.string),
   lang: PropTypes.oneOf(AllowedLanguages),
   style: PropTypes.object
 }
