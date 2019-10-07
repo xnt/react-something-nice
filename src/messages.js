@@ -33,7 +33,11 @@ const messages = [
   "Thank you for putting in the effort to make something great 👌",
   "We're doing great work together 🤗",
   "Good initiative! We can learn to colaborate with this activity!",
-  "Dear Team Member, You are Amazing! Keep up your great Job!"
+  "Dear Team Member, You are Amazing! Keep up your great Job!",
+  "Who's awesome? You're",
+  "You are working on something great",
+  "Everything is awesome and guess what? You're awesome too",
+  "Slow progress is better than no progress"
 ];
 
 const mensajes = [
