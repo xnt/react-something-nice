@@ -52,19 +52,24 @@ const mensajes = [
   "Querido compañero, Eres increíble! Sigue así!"
 ];
 
-const languages = (lang) => {
+const languages = lang => {
   let l = {
     en: messages,
     es: mensajes
-  }
+  };
   return l[lang];
-}
+};
 
-const getMessage = (lang) => {
-  console.log(`Lang en getMessage ${lang}`)
-  if(!lang) lang = 'en';
+const getMessage = lang => {
+  console.log(`Lang en getMessage ${lang}`);
+  if (!lang) lang = "en";
   let idiom = languages(lang);
   return idiom[Math.floor(Math.random() * idiom.length)];
-}
+};
 
-export default getMessage;
+const addMessages = ({ lang, customMessages = [] }) => {
+  if (!lang) lang = "en";
+  languages(lang).push(...customMessages);
+};
+
+export { addMessages, getMessage };
