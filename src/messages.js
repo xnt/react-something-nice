@@ -33,7 +33,8 @@ const messages = [
   "Thank you for putting in the effort to make something great 👌",
   "We're doing great work together 🤗",
   "Good initiative! We can learn to colaborate with this activity!",
-  "Dear Team Member, You are Amazing! Keep up your great Job!"
+  "Dear Team Member, You are Amazing! Keep up your great Job!",
+  "Every little helps. Keep doing what you do, and recognize that you matter!"
 ];
 
 const mensajes = [
@@ -49,7 +50,8 @@ const mensajes = [
   "Gracias por ser siempre tan confiable.",
   "Buena iniciativa! De esta manera aprendemos a colaborar!",
   "Gracias por este trabajo!",
-  "Querido compañero, Eres increíble! Sigue así!"
+  "Querido compañero, Eres increíble! Sigue así!",
+  "Apreciamos muchisimo lo que haces. Eres lo que hace que este equipo sea increible"
 ];
 
 const languages = (lang) => {
