@@ -19,7 +19,6 @@ const messages = [
   "You're good enough, you're smart enough, and doggone it, people like you!",
   "We're lucky to have you on this team!",
   "Never give up!",
-  "We're lucky to have you on this team!",
   "Having you on this team makes a big difference",
   "It's so refreshing getting to work with you.",
   "The work that you do matters to our success.",
@@ -33,7 +32,9 @@ const messages = [
   "Thank you for putting in the effort to make something great 👌",
   "We're doing great work together 🤗",
   "Good initiative! We can learn to colaborate with this activity!",
-  "Dear Team Member, You are Amazing! Keep up your great Job!"
+  "Dear Team Member, You are Amazing! Keep up your great Job!",
+  "If you believe in your heart that you are right, you must fight with all your might to do it your way 💪",
+  "Stop settling for second best. Be your best!"
 ];
 
 const mensajes = [
