@@ -64,7 +64,7 @@ const getMessage = (lang) => {
   console.log(`Lang en getMessage ${lang}`)
   if(!lang) lang = 'en';
   let idiom = languages(lang);
-  return idiom[Math.floor(Math.random() * idiom.length)];
+  return idiom/* [Math.floor(Math.random() * idiom.length)] */;
 }
 
 export default getMessage;

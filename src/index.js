@@ -6,9 +6,16 @@ import AllowedLanguages from './allowedLanguages';
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const SomethingNice = ({ className, lang, style }) => {
+const SomethingNice = ({ className, lang, style, customMsg }) => {
 
-  const [message] = useState(getMessage(lang));
+  const message = useState(getMessage(lang));
+  if(typeof customMsg == 'string' && customMsg){
+    message.push(customMsg)
+  }
+  else if(customMsg){
+    message.push(...customMsg)
+  }
+  message = message[Math.floor(Math.random() * message.length)]
 
   return (
     <span style={style} className={className}>
@@ -24,7 +31,8 @@ SomethingNice.defaultProps = {
 SomethingNice.propTypes = {
   className: PropTypes.string,
   lang: PropTypes.oneOf(AllowedLanguages),
-  style: PropTypes.object
+  style: PropTypes.object,
+  customMessage: PropTypes.any
 }
 
 export default SomethingNice;

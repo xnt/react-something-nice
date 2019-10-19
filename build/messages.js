@@ -19,7 +19,9 @@ var getMessage = function getMessage(lang) {
   console.log("Lang en getMessage ".concat(lang));
   if (!lang) lang = 'en';
   var idiom = languages(lang);
-  return idiom[Math.floor(Math.random() * idiom.length)];
+  return idiom
+  /* [Math.floor(Math.random() * idiom.length)] */
+  ;
 };
 
 var _default = getMessage;
