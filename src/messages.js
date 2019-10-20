@@ -15,6 +15,7 @@ const messages = [
   "You can totally do this💪",
   "You are doing great!",
   "You are beautiful",
+  "You are on a roll!",
   "If no one's told you yet today, you're doing great.",
   "You're good enough, you're smart enough, and doggone it, people like you!",
   "We're lucky to have you on this team!",
