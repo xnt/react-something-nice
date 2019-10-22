@@ -33,7 +33,8 @@ const messages = [
   "Thank you for putting in the effort to make something great 👌",
   "We're doing great work together 🤗",
   "Good initiative! We can learn to colaborate with this activity!",
-  "Dear Team Member, You are Amazing! Keep up your great Job!"
+  "Dear Team Member, You are Amazing! Keep up your great Job!",
+  "If you fall asleep now, you will dream. If you study now, you will live your dream"
 ];
 
 const mensajes = [
@@ -52,19 +53,19 @@ const mensajes = [
   "Querido compañero, Eres increíble! Sigue así!"
 ];
 
-const languages = (lang) => {
+const languages = lang => {
   let l = {
     en: messages,
     es: mensajes
-  }
+  };
   return l[lang];
-}
+};
 
-const getMessage = (lang) => {
-  console.log(`Lang en getMessage ${lang}`)
-  if(!lang) lang = 'en';
+const getMessage = lang => {
+  console.log(`Lang en getMessage ${lang}`);
+  if (!lang) lang = "en";
   let idiom = languages(lang);
   return idiom[Math.floor(Math.random() * idiom.length)];
-}
+};
 
 export default getMessage;
