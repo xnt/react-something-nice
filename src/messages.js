@@ -25,6 +25,7 @@ const messages = [
   "The work that you do matters to our success.",
   "I am continually impressed by your results!",
   "You're awesome!",
+  "Keep up the great work and don't give up!"
   "You're kicking goals!",
   "You came, you saw, you conquered!",
   "You're the bees knees",
