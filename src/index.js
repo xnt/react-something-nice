@@ -6,9 +6,9 @@ import AllowedLanguages from './allowedLanguages';
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const SomethingNice = ({ className, lang, style }) => {
+const SomethingNice = ({ className, lang, style, customMessages }) => {
 
-  const [message] = useState(getMessage(lang));
+  const [message] = useState(getMessage(lang, customMessages));
 
   return (
     <span style={style} className={className}>
@@ -24,7 +24,8 @@ SomethingNice.defaultProps = {
 SomethingNice.propTypes = {
   className: PropTypes.string,
   lang: PropTypes.oneOf(AllowedLanguages),
-  style: PropTypes.object
+  style: PropTypes.object,
+  customMessages: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default SomethingNice;
