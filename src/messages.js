@@ -34,7 +34,7 @@ const messages = [
   "We're doing great work together 🤗",
   "Good initiative! We can learn to colaborate with this activity!",
   "Dear Team Member, You are Amazing! Keep up your great Job!",
-  "Thank you for being an important part of out story!"
+  "Thank you for being an important part of our story!"
 ];
 
 const mensajes = [
