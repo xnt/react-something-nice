@@ -1,6 +1,7 @@
 "use strict";
 
 const messages = [
+  "You are achieving great things!",
   "Have a great day ☕️!",
   "Let's continue bringing out the best in one another 👌",
   "Thank you for your dedication, your time and your talent 👍",
