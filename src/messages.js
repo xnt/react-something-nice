@@ -52,10 +52,25 @@ const mensajes = [
   "Querido compañero, Eres increíble! Sigue así!"
 ];
 
+const mensagens = [
+  "A felicidade começa por um simples sorriso! 😀",
+  "Comece um dia com um forte abraço em quem você ama 😊",
+  "Plante carinho e colha amor 💓",
+  "Ajude quem precisa, mesmo que seja com uma mensagem agradável.",
+  "Aprecie cada momento do seu dia ☀",
+  "Gratidão pela vida e os amigos que tenho 🙏",
+  "A vida é curta, então curta ela!",
+  "Não faça para os outros o que não quer para você.",
+  "Tenha foco e persistência.",
+  "Elogie uma pessoa hoje",
+  "Faça um criança gargalhar."
+];
+
 const languages = (lang) => {
   let l = {
     en: messages,
-    es: mensajes
+    es: mensajes,
+    pt: mensagens
   }
   return l[lang];
 }
